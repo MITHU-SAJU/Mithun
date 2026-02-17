@@ -47,13 +47,20 @@ export default function Contact() {
                 };
 
                 try {
-                    await emailjs.send(serviceId, templateId, templateParams, publicKey);
+                    console.log('Attempting to send email via EmailJS...');
+                    const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+                    console.log('EmailJS Success:', response.status, response.text);
                     emailSent = true;
                 } catch (emailErr) {
-                    console.error('EmailJS Error:', emailErr);
+                    console.error('EmailJS Error Details:', emailErr);
                 }
             } else {
-                console.warn('EmailJS credentials missing in environment.');
+                console.error('EmailJS configuration failed. Check environment variables.');
+                console.log('DEBUG INFO:', {
+                    serviceId: serviceId ? 'LOADED' : 'MISSING',
+                    templateId: templateId ? 'LOADED' : 'MISSING',
+                    publicKey: publicKey ? 'LOADED' : 'MISSING'
+                });
             }
 
             // 2. Save to backend (Render free tier might be slow to wake up)

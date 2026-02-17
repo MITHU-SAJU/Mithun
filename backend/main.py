@@ -15,13 +15,19 @@ from pydantic import BaseModel
 
 app = FastAPI(title="Portfolio API", version="1.0.0")
 
-# CORS — allow frontend dev server
+# CORS — allow frontend dev and production servers
+origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://mithun-tech.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "Accept"],
 )
 
 DATA_DIR = Path(__file__).parent / "data"
