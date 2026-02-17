@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "Marvel Batteries – Corporate Website",
+        "description": "Designed and developed a responsive corporate website using HTML5, CSS3, JavaScript, and Bootstrap. Implemented performance-optimized UI animations and interactive components. Improved user experience through mobile-first layouts and structured navigation.",
+        "image": "images/marvel-battery.png",
+        "tech_stack": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap"
+        ],
+        "live_url": "https://marvelrooftopsolar.com/",
+        "github_url": "https://github.com/MITHU-SAJU/marvel-batteries"
+    },
+    {
+        "id": 2,
+        "title": "Iyappa Foods – Business Management System",
+        "description": "Developed frontend modules for business operations including orders, inventory, and reports. Built responsive web interfaces and a Flutter-based mobile application. Integrated REST APIs to fetch and display real-time business data.",
+        "image": "images/iyappaa.png",
+        "tech_stack": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap",
+            "Laravel"
+        ],
+        "live_url": "",
+        "github_url": "",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "title": "SP Textiles – Textile Management Software",
+        "description": "Developed software modules for inward and outward inventory management. Created Flutter-based mobile UI for stock monitoring and reporting.",
+        "image": "images/sp-textiles.png",
+        "tech_stack": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap",
+            "Flutter",
+            "REST API"
+        ],
+        "live_url": "https://mithu-saju.github.io/sp-yarn/",
+        "github_url": "https://github.com/MITHU-SAJU/sp-yarn",
+        "featured": true
+    },
+    {
+        "id": 4,
+        "title": "Zengraf – Business Management System",
+        "description": "Designed and implemented UI for customer, vendor, employee, and job order management. Used Bootstrap and custom CSS to ensure consistency and scalability.",
+        "image": "images/zengraf.png",
+        "tech_stack": [
+            "Bootstrap",
+            "CSS3",
+            "JavaScript",
+            "PHP"
+        ],
+        "live_url": "https://mithu-saju.github.io/zengraf/",
+        "github_url": "https://github.com/MITHU-SAJU/zengraf",
+        "featured": true
+    }
+]

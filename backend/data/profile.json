@@ -1,0 +1,29 @@
+{
+  "name": "Mithun ",
+  "role": "Software Developer || Frontend Developer",
+  "intro": "I design, develop, and maintain scalable web and mobile applications using modern technologies like React.js, Flutter, and Python. Passionate about clean code, responsive UIs, and full-stack excellence.",
+  "bio": "“Frontend Developer specializing in UI/UX design and modern web interfaces, currently working at Ctrl-Next Technologies. Experienced in building responsive, scalable web and mobile applications using React.js, JavaScript, HTML5, CSS3, Bootstrap, Flutter, and REST API integration. Strong focus on creating intuitive user experiences, clean UI workflows, and maintainable code.",
+  "avatar": "/images/avatar.png",
+  "social": {
+    "github": "github.com/MITHU-SAJU/",
+    "linkedin": "www.linkedin.com/in/mithun-t-m",
+    "twitter": "",
+    "email": "mithunmano0001@gmail.com"
+  },
+  "phone": "+91 85248 22544",
+  "resume_url": "#",
+  "education": [
+    {
+      "degree": "Master of Computer Applications (MCA)",
+      "institution": "Sri Ramakrishna Mission Vidyalaya College, Coimbatore",
+      "period": "2024 – 2026",
+      "status": "Pursuing"
+    },
+    {
+      "degree": "B.Sc Computer Science",
+      "institution": "Sri Ramakrishna Mission Vidyalaya College, Coimbatore",
+      "period": "2021 – 2024",
+      "cgpa": "8.0"
+    }
+  ]
+}

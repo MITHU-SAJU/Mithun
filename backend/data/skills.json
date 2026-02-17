@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "React.js",
+        "category": "Frontend",
+        "icon": "⚛️"
+    },
+    {
+        "id": 2,
+        "name": "JavaScript",
+        "category": "Frontend",
+        "icon": "🟨"
+    },
+    {
+        "id": 3,
+        "name": "HTML5",
+        "category": "Frontend",
+        "icon": "🌐"
+    },
+    {
+        "id": 4,
+        "name": "CSS3",
+        "category": "Frontend",
+        "icon": "🎨"
+    },
+    {
+        "id": 5,
+        "name": "Bootstrap",
+        "category": "Frontend",
+        "icon": "🅱️"
+    },
+    {
+        "id": 6,
+        "name": "Flutter",
+        "category": "Frontend",
+        "icon": "📱"
+    },
+    {
+        "id": 7,
+        "name": "Python",
+        "category": "Backend",
+        "icon": "🐍"
+    },
+    {
+        "id": 8,
+        "name": "PHP",
+        "category": "Backend",
+        "icon": "🐘"
+    },
+    {
+        "id": 9,
+        "name": "Node.js",
+        "category": "Backend",
+        "icon": "🟢"
+    },
+    {
+        "id": 10,
+        "name": "MySQL",
+        "category": "Database",
+        "icon": "🗄️"
+    },
+    {
+        "id": 11,
+        "name": "MongoDB",
+        "category": "Database",
+        "icon": "🍃"
+    },
+    {
+        "id": 12,
+        "name": "Firebase",
+        "category": "Database",
+        "icon": "🔥"
+    }
+]
