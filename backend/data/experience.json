@@ -4,13 +4,13 @@
         "role": "Frontend Developer (Internship)",
         "company": "CTRL-NEXT TECHNOLOGIES",
         "period": "July 2024 – Present",
-        "description": "Developed and maintained web application modules using React.js, PHP, MySQL, and Bootstrap. Implemented REST API integrations for real-time data rendering. Built reusable UI components and ensured responsive design and cross-browser compatibility. Collaborated with backend developers and designers to deliver production-ready features.",
+        "description": "Developed and maintained web application modules using React.js, PHP, MySQL, and Bootstrap. Implemented REST API integrations for real-time data rendering. Built reusable UI components and ensured responsive design and cross-browser compatibility. Collaborated with backend developers and designers to deliver production-ready features."
     },
     {
         "id": 2,
         "role": "Frontend Developer Training",
         "company": "Easy Design Systems, Coimbatore",
         "period": "2024",
-        "description": "Completed comprehensive Frontend Developer training covering modern web development practices, responsive design patterns, and industry-standard development workflows.",
+        "description": "Completed comprehensive Frontend Developer training covering modern web development practices, responsive design patterns, and industry-standard development workflows."
     }
 ]
