@@ -5,13 +5,6 @@
         "company": "CTRL-NEXT TECHNOLOGIES",
         "period": "July 2024 – Present",
         "description": "Developed and maintained web application modules using React.js, PHP, MySQL, and Bootstrap. Implemented REST API integrations for real-time data rendering. Built reusable UI components and ensured responsive design and cross-browser compatibility. Collaborated with backend developers and designers to deliver production-ready features.",
-        "tech": [
-            "React.js",
-            "PHP",
-            "MySQL",
-            "Bootstrap",
-            "REST API"
-        ]
     },
     {
         "id": 2,
@@ -19,11 +12,5 @@
         "company": "Easy Design Systems, Coimbatore",
         "period": "2024",
         "description": "Completed comprehensive Frontend Developer training covering modern web development practices, responsive design patterns, and industry-standard development workflows.",
-        "tech": [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "Angular"
-        ]
     }
 ]
