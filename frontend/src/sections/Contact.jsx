@@ -26,32 +26,50 @@ export default function Contact() {
             return;
         }
         setSending(true);
-        try {
-            // 1. Save to local backend
-            await submitContact(form);
+        setStatus({ type: '', message: '' });
 
-            // 2. Send email via EmailJS
+        try {
+            // 1. Send email via EmailJS first (usually faster/more reliable than cold-start backend)
             const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
             const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
             const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+            let emailSent = false;
             if (serviceId && templateId && publicKey && serviceId !== 'your_service_id') {
                 const templateParams = {
-                    name: form.name,     // Matches {{name}} in your screenshot
+                    name: form.name,
                     email: form.email,
                     phone: form.phone,
                     reply_to: form.email,
-                    title: form.subject || 'New Portfolio Contact', // Matches {{title}} in your screenshot
+                    title: form.subject || 'New Portfolio Contact',
                     message: form.message,
                     to_email: 'mithunmano0001@gmail.com'
                 };
 
-                const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
-                console.log('EmailJS Success:', response.status, response.text);
+                try {
+                    await emailjs.send(serviceId, templateId, templateParams, publicKey);
+                    emailSent = true;
+                } catch (emailErr) {
+                    console.error('EmailJS Error:', emailErr);
+                }
+            } else {
+                console.warn('EmailJS credentials missing in environment.');
             }
 
-            setStatus({ type: 'success', message: 'Message sent successfully! I will get back to you soon.' });
-            setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+            // 2. Save to backend (Render free tier might be slow to wake up)
+            try {
+                await submitContact(form);
+            } catch (backendErr) {
+                console.error('Backend Storage Error:', backendErr);
+                // We don't block the success message if email was sent
+            }
+
+            if (emailSent) {
+                setStatus({ type: 'success', message: 'Message sent successfully! I will get back to you soon.' });
+                setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+            } else {
+                setStatus({ type: 'error', message: 'Could not send email. Please check your configuration or try again later.' });
+            }
         } catch (error) {
             console.error('Contact Error:', error);
             const errorMessage = error?.text || error?.message || 'Something went wrong. Please try again later.';
